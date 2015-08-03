@@ -1,0 +1,2 @@
+QLineEdit#lineEdit { color: red }
+QPushButton#pushButton { color: red }
