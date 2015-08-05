@@ -1,41 +1,6 @@
 #include <myaudio.h>
 #include <QHeaderView>
 
-void init_widget(Ui::KWS *ui){
-    ui->pushButton_2->setEnabled(false);
-    ui->horizontalSlider->setEnabled(false);
-    ui->horizontalSlider_2->setEnabled(false);
-    ui->horizontalSlider_2->setValue(50);
-    ui->label_6->setPixmap(QPixmap(":/image/speaker.png"));
-    ui->tableWidget->setColumnCount(3);
-    ui->tableWidget->setColumnWidth(0,110);
-    ui->tableWidget->setColumnWidth(1,40);
-    ui->tableWidget->setColumnWidth(2,40);
-    QStringList list1;
-    list1 << "录音文件" << "播放" << "删除";
-    ui->tableWidget->setHorizontalHeaderLabels(list1);
-    ui->tableWidget->verticalHeader()->setVisible(false); //隐藏行表头
-    ui->tableWidget->setFont(QFont("微软雅黑"));
-    ui->tableWidget->setShowGrid(false);
-
-    ui->tableWidget_2->setColumnCount(4);
-    ui->tableWidget_2->setColumnWidth(0,40);
-    ui->tableWidget_2->setColumnWidth(1,130);
-    ui->tableWidget_2->setColumnWidth(2,130);
-    ui->tableWidget_2->setColumnWidth(3,130);
-    QStringList list2;
-    list2 << "序号" <<"时间段" << "置信度" << "操作";
-    ui->tableWidget_2->setHorizontalHeaderLabels(list2);
-    ui->tableWidget_2->verticalHeader()->setVisible(false); //隐藏行表头
-    ui->tableWidget_2->setFont(QFont("微软雅黑"));
-    ui->tableWidget_2->setSelectionBehavior(QAbstractItemView::SelectRows);
-    ui->tableWidget_2->setEditTriggers(QTableWidget::NoEditTriggers);
-    ui->comboBox->setEnabled(false);
-    ui->comboBox_2->setEnabled(false);
-    ui->tableWidget->setVisible(false);
-}
-
-
 void create_file(QString audio_path,QString file_mfcc_name){
     QString fileName = "./config/target.src";
     QFile file( fileName );      //新建文件target.src
@@ -48,16 +13,24 @@ void create_file(QString audio_path,QString file_mfcc_name){
 QString audio_toWav(QString audio_path, QProcess *pro){
     QFileInfo fi = QFileInfo(audio_path);
     QString finame = fi.fileName();  //获取文件名
+
     QString file_suffix = fi.suffix();  //获取文件扩展名
     int index = finame.lastIndexOf(".");
     finame.truncate(index);      //不带扩展名的文件名
-    if(file_suffix.compare("wav") == 0)
+    if(file_suffix.compare("wav") == 0)     //若当前文件为wav格式音频文件，就直接返回不带扩展名的文件名
         return finame;
     QString ffmpeg_cmd = "./ffmpeg/ffmpeg -i ";
     QString target_path = " ./wav/";
     target_path.append(finame).append(".wav");
     ffmpeg_cmd.append(audio_path).append(target_path);
-    pro->start(ffmpeg_cmd);
+
+    QString pan = "./wav/";     //判断wav文件夹下该文件是否已经存在
+    pan.append(finame).append(".wav");
+    QFile file(pan);
+    if (file.exists()){
+        file.remove();      //存在就删除
+    }
+    pro->start(ffmpeg_cmd);     //对当前音频文件进行格式转化为wav音频文件
     return finame;
 }
 

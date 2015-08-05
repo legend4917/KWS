@@ -11,7 +11,6 @@
 const QString HCopy_cmd = "./htk/HCopy -A -D -C ./config/analysis.conf -S ./config/target.src";
 
 
-void init_widget(Ui::KWS *ui);
 void create_file(QString audio_path,QString file_name);
 QString audio_toWav(QString, QProcess *pro);
 void get_mfcc(QString file_name,QProcess *pro);

@@ -1,3 +1,19 @@
+QWidget#KWS{
+    background-color: #CCFFCC;
+}
+
+QToolButton#minButton,QToolButton#closeButton{
+    border:none;
+}
+
+QToolButton#closeButton:hover{
+    background:#CC3333;
+}
+
+QToolButton#minButton:hover{
+    background:#6699FF;
+}
+
 QPushButton#pushButton{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(181, 225, 250, 255), stop:0.5 rgba(222, 242, 251, 255));
     border-radius:5px;
