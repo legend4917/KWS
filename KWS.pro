@@ -15,12 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         kws.cpp \
     myaudio.cpp \
-    edit.cpp
+    edit.cpp \
+    init.cpp \
+    thread.cpp
 
 HEADERS  += \
     kws.h \
     myaudio.h \
-    edit.h
+    edit.h \
+    init.h \
+    thread.h
 
 FORMS    += kws.ui
 

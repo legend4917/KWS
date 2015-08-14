@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>653</height>
+    <height>664</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>30</y>
+     <x>150</x>
+     <y>60</y>
      <width>51</width>
      <height>31</height>
     </rect>
@@ -39,8 +39,8 @@
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>29</y>
-     <width>521</width>
+     <y>59</y>
+     <width>551</width>
      <height>31</height>
     </rect>
    </property>
@@ -57,8 +57,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>740</x>
-     <y>30</y>
+     <x>770</x>
+     <y>60</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -79,10 +79,10 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>80</y>
-     <width>75</width>
-     <height>31</height>
+     <x>450</x>
+     <y>130</y>
+     <width>61</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -95,15 +95,15 @@
     <string notr="true"/>
    </property>
    <property name="text">
-    <string>播放</string>
+    <string/>
    </property>
   </widget>
   <widget class="QSlider" name="horizontalSlider">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>80</y>
-     <width>581</width>
+     <x>150</x>
+     <y>100</y>
+     <width>701</width>
      <height>31</height>
     </rect>
    </property>
@@ -117,8 +117,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>110</y>
+     <x>150</x>
+     <y>130</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -135,8 +135,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>110</y>
+     <x>770</x>
+     <y>130</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -153,8 +153,8 @@
   <widget class="QSlider" name="horizontalSlider_2">
    <property name="geometry">
     <rect>
-     <x>700</x>
-     <y>110</y>
+     <x>560</x>
+     <y>140</y>
      <width>121</width>
      <height>31</height>
     </rect>
@@ -166,28 +166,10 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>110</y>
-     <width>21</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>50</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>670</x>
+     <x>700</x>
      <y>180</y>
      <width>151</width>
      <height>41</height>
@@ -209,9 +191,9 @@
   <widget class="Line" name="line">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>150</x>
      <y>230</y>
-     <width>681</width>
+     <width>701</width>
      <height>20</height>
     </rect>
    </property>
@@ -222,10 +204,10 @@
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>250</y>
+     <x>450</x>
+     <y>270</y>
      <width>61</width>
-     <height>31</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -288,10 +270,10 @@
   <widget class="QComboBox" name="comboBox_2">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>250</y>
+     <x>520</x>
+     <y>270</y>
      <width>61</width>
-     <height>31</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -354,10 +336,10 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>250</y>
+     <x>390</x>
+     <y>270</y>
      <width>51</width>
-     <height>31</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -373,9 +355,9 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>110</y>
-     <width>21</width>
+     <x>520</x>
+     <y>140</y>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -386,20 +368,20 @@
   <widget class="QTableWidget" name="tableWidget_2">
    <property name="geometry">
     <rect>
-     <x>365</x>
-     <y>291</y>
-     <width>461</width>
-     <height>351</height>
+     <x>390</x>
+     <y>300</y>
+     <width>451</width>
+     <height>321</height>
     </rect>
    </property>
   </widget>
   <widget class="QListWidget" name="listWidget">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>291</y>
+     <x>150</x>
+     <y>261</y>
      <width>221</width>
-     <height>351</height>
+     <height>381</height>
     </rect>
    </property>
   </widget>
@@ -432,9 +414,9 @@
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>170</y>
-     <width>211</width>
+     <x>150</x>
+     <y>190</y>
+     <width>221</width>
      <height>31</height>
     </rect>
    </property>
@@ -454,8 +436,8 @@
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>170</y>
+     <x>390</x>
+     <y>190</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -470,6 +452,203 @@
     <string>提交</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>2</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>海量音频检索系统</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="logobtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="headerlabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_show">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>260</y>
+     <width>471</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_page">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>270</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_goto">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>270</y>
+     <width>37</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Go</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_prev">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>270</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上一页</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_next">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>270</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下一页</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>270</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>第</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>270</y>
+     <width>16</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>页</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_totalpage">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>620</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>总共 0 页</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_currentpage">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>620</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>当前第 0 页</string>
+   </property>
+  </widget>
+  <zorder>label_show</zorder>
+  <zorder>headerlabel</zorder>
+  <zorder>label</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>horizontalSlider</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>horizontalSlider_2</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>line</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>comboBox_2</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>tableWidget_2</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>minButton</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>label_7</zorder>
+  <zorder>logobtn</zorder>
+  <zorder>lineEdit_page</zorder>
+  <zorder>toolButton_goto</zorder>
+  <zorder>toolButton_prev</zorder>
+  <zorder>toolButton_next</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_totalpage</zorder>
+  <zorder>label_currentpage</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

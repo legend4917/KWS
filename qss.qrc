@@ -3,10 +3,15 @@
         <file>image/dialog.gif</file>
         <file>style/style.qss</file>
         <file>image/delete.png</file>
-        <file>image/pause.png</file>
-        <file>image/play.png</file>
         <file>image/speaker.png</file>
         <file>Project.rc</file>
         <file>image/Project.ico</file>
+        <file>image/play.png</file>
+        <file>image/pause.png</file>
+        <file>image/voice1.png</file>
+        <file>image/voice2.png</file>
+        <file>image/voice3.png</file>
+        <file>image/loading.gif</file>
+        <file>image/background.jpg</file>
     </qresource>
 </RCC>

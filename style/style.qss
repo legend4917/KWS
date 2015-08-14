@@ -1,5 +1,19 @@
 QWidget#KWS{
-    background-color: #CCFFCC;
+    background-color: rgb(65,160,250);
+}
+
+QLabel#headerlabel{
+    background-color: #0066CC;
+}
+
+QToolButton#logobtn{
+    border:none;
+}
+
+QLabel#label_7{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 QToolButton#minButton,QToolButton#closeButton{
@@ -14,6 +28,7 @@ QToolButton#minButton:hover{
     background:#6699FF;
 }
 
+
 QPushButton#pushButton{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(181, 225, 250, 255), stop:0.5 rgba(222, 242, 251, 255));
     border-radius:5px;
@@ -26,16 +41,8 @@ QPushButton#pushButton:pressed{
     border: 1px solid #5F92B2;
 }
 
-QPushButton#pushButton_2{
-    background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(181, 225, 250, 255), stop:0.5 rgba(222, 242, 251, 255));
-    border-radius:5px;
-    border: 1px solid #3C80B1;
-}
-
-QPushButton#pushButton_2:pressed{
-    background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
-    border-radius:5px;
-    border: 1px solid #5F92B2;
+QPushButton#pushButton_2 {
+    border-radius: 10px;
 }
 
 QSlider::groove:horizontal {
@@ -105,4 +112,48 @@ QPushButton#pushButton_6:pressed{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
     border-radius:5px;
     border: 1px solid #5F92B2;
+}
+
+QListWidget#listWidget{
+
+}
+
+QListWidget::item{
+    background: #CCFFFF;
+    border-bottom: 1px solid #5F92B2;
+    font-size: 20px;
+}
+
+QListWidget::item:hover{
+    background: #99FFCC;
+}
+
+QListWidget::item:selected{
+    background: #99FFCC;
+}
+
+QLabel#label_show{
+    background: #FFFFCC;
+    border: 1px solid #5F92B2;
+}
+
+QHeaderView::section {
+    height:30px;
+    background: #AAAAAA;
+}
+
+QTableWidget#tableWidget_2::item:hover{
+    background: #CCFFCC;
+}
+
+QTableWidget#tableWidget_2::item:selected{
+    background: #6666FF;
+}
+
+QToolButton#toolButton_prev, QToolButton#toolButton_next ,QToolButton#toolButton_goto{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+QLabel#label_currentpage, QLabel#label_totalpage{
+    font-family: 'Times New Roman', Times, serif;
 }
