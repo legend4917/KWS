@@ -12,6 +12,7 @@
 #include <QTextStream>
 #include <QFileDialog>
 #include <QFileInfo>
+#include <QVector>
 #include <QFile>
 #include <QDir>
 #include <QProcess>
@@ -25,6 +26,7 @@
 #include <QMovie>
 #include <QToolButton>
 #include <QPalette>
+
 namespace Ui {
 class KWS;
 }
@@ -86,6 +88,7 @@ protected:
     void mousePressEvent(QMouseEvent *);
     void mouseMoveEvent(QMouseEvent *);
     void keyPressEvent(QKeyEvent *);
+    bool eventFilter(QObject *, QEvent *);
 
 public:
     Ui::KWS *ui;
@@ -96,11 +99,9 @@ public:
     QString audio_path;         //保存音频文件路径
     QDialog qDialog;
     bool flag;
-    bool flag1, ok;
-    QString dict[1000];
-    int dict_length;
+    bool inArea, ok;
+    QVector<QString> dict;
 
-    int spea_length;            //保存音频文件内容的长度
 
     typedef struct {
         qint64 start;
@@ -109,19 +110,16 @@ public:
         double poss;
     }result;
 
-    result spea_mlf[10000];     //保存音频mlf文件的内容
-
-    int dist[10][1000];         //保存距离编辑算法得到的距离
-    int dist_length[10];        //保存每个拼音的dist数组的长度
+    QVector<result> spea_mlf;
+    QVector<int> dist[10];      //保存当前每个关键词的距离
     int m;                      //当前选中的拼音序号
 
     QString pin[100];
     int pin_length[100];
 
-    int sele[10000];            //根据置信区间筛选的编号
+    QVector<int> sele;
     int total_page;             //当前的总页数
     int current_page;           //当前显示的页数
-    int count_line;             //筛选得到的总数据数
 };
 
 #endif // KWS_H

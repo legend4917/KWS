@@ -357,7 +357,7 @@
     <rect>
      <x>520</x>
      <y>140</y>
-     <width>31</width>
+     <width>41</width>
      <height>31</height>
     </rect>
    </property>
@@ -617,6 +617,19 @@
     <string>当前第 0 页</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_move">
+   <property name="geometry">
+    <rect>
+     <x>53</x>
+     <y>0</y>
+     <width>881</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>label_show</zorder>
   <zorder>headerlabel</zorder>
   <zorder>label</zorder>
@@ -649,6 +662,7 @@
   <zorder>label_9</zorder>
   <zorder>label_totalpage</zorder>
   <zorder>label_currentpage</zorder>
+  <zorder>label_move</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

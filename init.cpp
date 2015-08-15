@@ -18,6 +18,7 @@ void init_header(Ui::KWS *ui){
     icon.addPixmap(pixmap0);
     ui->logobtn->setIcon(icon);
     ui->logobtn->setIconSize(QSize(15,15));
+    ui->pushButton->setCursor(Qt::PointingHandCursor);
 }
 
 void init_player(Ui::KWS *ui){
@@ -25,15 +26,18 @@ void init_player(Ui::KWS *ui){
     ui->horizontalSlider->setEnabled(false);
     ui->horizontalSlider_2->setEnabled(false);
     ui->horizontalSlider_2->setValue(50);
-    QPixmap voice(":/image/voice2.png");
+    QPixmap voice(":/image/volume2.png");
     QPixmap scaledPixmap = voice.scaled(QSize(35,35),Qt::KeepAspectRatio);
     ui->label_6->setPixmap(scaledPixmap);
-    QPixmap pixmap1(":/image/play.png");
+    QPixmap pixmap1(":/image/play1.png");
     icon.addPixmap(pixmap1);
     ui->pushButton_2->setIcon(icon);
     ui->pushButton_2->setIconSize(QSize(40,40));
     ui->pushButton_2->setFixedSize(40,40);
+    ui->pushButton_2->setWhatsThis("pause");
     ui->pushButton_2->setCursor(Qt::PointingHandCursor);
+    ui->pushButton_5->setCursor(Qt::PointingHandCursor);
+    ui->pushButton_6->setCursor(Qt::PointingHandCursor);
 }
 
 void init_comboBox(Ui::KWS *ui){
@@ -55,6 +59,9 @@ void init_tableWidget(Ui::KWS *ui){
     ui->tableWidget_2->setMouseTracking(true);
     ui->tableWidget_2->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->tableWidget_2->setEditTriggers(QTableWidget::NoEditTriggers);
+    ui->toolButton_goto->setCursor(Qt::PointingHandCursor);
+    ui->toolButton_next->setCursor(Qt::PointingHandCursor);
+    ui->toolButton_prev->setCursor(Qt::PointingHandCursor);
 }
 
 void init_qDialog(QDialog *qDialog){

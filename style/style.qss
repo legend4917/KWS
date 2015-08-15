@@ -35,7 +35,7 @@ QPushButton#pushButton{
     border: 1px solid #3C80B1;
 }
 
-QPushButton#pushButton:pressed{
+QPushButton#pushButton:hover{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
     border-radius:5px;
     border: 1px solid #5F92B2;
@@ -84,7 +84,7 @@ QPushButton#pushButton_3{
     border: 1px solid #3C80B1;
 }
 
-QPushButton#pushButton_3:pressed{
+QPushButton#pushButton_3:hover{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
     border-radius:5px;
     border: 1px solid #5F92B2;
@@ -96,7 +96,7 @@ QPushButton#pushButton_5{
     border: 1px solid #3C80B1;
 }
 
-QPushButton#pushButton_5:pressed{
+QPushButton#pushButton_5:hover{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
     border-radius:5px;
     border: 1px solid #5F92B2;
@@ -108,7 +108,7 @@ QPushButton#pushButton_6{
     border: 1px solid #3C80B1;
 }
 
-QPushButton#pushButton_6:pressed{
+QPushButton#pushButton_6:hover{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
     border-radius:5px;
     border: 1px solid #5F92B2;
@@ -133,7 +133,7 @@ QListWidget::item:selected{
 }
 
 QLabel#label_show{
-    background: #FFFFCC;
+    background: rgb(240,240,240);
     border: 1px solid #5F92B2;
 }
 

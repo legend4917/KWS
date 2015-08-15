@@ -2,16 +2,16 @@
     <qresource prefix="/">
         <file>image/dialog.gif</file>
         <file>style/style.qss</file>
-        <file>image/delete.png</file>
-        <file>image/speaker.png</file>
         <file>Project.rc</file>
         <file>image/Project.ico</file>
-        <file>image/play.png</file>
-        <file>image/pause.png</file>
-        <file>image/voice1.png</file>
-        <file>image/voice2.png</file>
-        <file>image/voice3.png</file>
-        <file>image/loading.gif</file>
         <file>image/background.jpg</file>
+        <file>image/pause1.png</file>
+        <file>image/pause2.png</file>
+        <file>image/play1.png</file>
+        <file>image/play2.png</file>
+        <file>image/volume0.png</file>
+        <file>image/volume1.png</file>
+        <file>image/volume2.png</file>
+        <file>image/volume3.png</file>
     </qresource>
 </RCC>
