@@ -5,17 +5,18 @@
 #include <QAudioInput>
 #include <QAudioOutput>
 #include <QProcess>
+#include <QVector>
 #include "ui_kws.h"
 
 
-QString handleAudio(QString audio_path, qint64 time, int *cnt_m, QLabel *label);         //音频预处理
-int segmentAudio(QString, QString, qint64, QString *);
-void create_targetFile(QString *audio_name, QString file_name, QString *mfcc_name, int cnt);
+QString handleAudio(QString audio_path, qint64 time, QVector<QString> &audio_name);         //音频预处理
+void segmentAudio(QString, QString, qint64, QVector<QString> &audio_name);
+QString create_targetFile(int audio, QString file_name, QVector<QString> audio_name);
 QString audio_toWav(QString, QString);
-void get_mfcc();
-void create_scriptFile(QString *mfcc_name, int cnt);
-void makeGram(QString input);
-QString get_phone(QString file_name);
+void get_mfcc(QString target_path);
+QString create_scriptFile(int audio, QString file_name);
+void makeGram(QString name);
+void get_phone(QString script_path, QString file_name, int audio, QString name);
 
 
 #endif // MYAUDIO

@@ -17,14 +17,16 @@ SOURCES += main.cpp\
     myaudio.cpp \
     edit.cpp \
     init.cpp \
-    thread.cpp
+    thread.cpp \
+    mydialog.cpp
 
 HEADERS  += \
     kws.h \
     myaudio.h \
     edit.h \
     init.h \
-    thread.h
+    thread.h \
+    mydialog.h
 
 FORMS    += kws.ui
 

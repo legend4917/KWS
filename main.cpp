@@ -6,9 +6,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon("Project.ico"));
     KWS w;
-    w.setFixedSize(1000,650);
+    w.setFixedSize(1000,675);
     w.setWindowFlags(Qt::FramelessWindowHint);
-    w.setGeometry(180,60,1000,650);
+    w.setGeometry(180,60,1000,675);
     w.show();
     QFile styleFile(":/style/style.qss");
     styleFile.open(QFile::ReadOnly);

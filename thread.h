@@ -12,13 +12,14 @@ public:
 signals:
     void showDialog();
     void startedit(int);
+    void initFile(int);
 
 protected:
     void run();
 
 public:
-   int order;
-
+    int order;
+    int audio;
 };
 
 #endif // THREAD_H

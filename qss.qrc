@@ -11,7 +11,8 @@
         <file>image/play2.png</file>
         <file>image/volume0.png</file>
         <file>image/volume1.png</file>
-        <file>image/volume2.png</file>
         <file>image/volume3.png</file>
+        <file>image/volume2.png</file>
+        <file>image/add.png</file>
     </qresource>
 </RCC>

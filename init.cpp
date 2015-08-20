@@ -10,6 +10,7 @@ void init(Ui::KWS *ui, QDialog *qDialog){
     init_comboBox(ui);
     init_qDialog(qDialog);
     init_lineEdit_show(ui);
+    init_tableView(ui);
 }
 
 void init_header(Ui::KWS *ui){
@@ -27,7 +28,7 @@ void init_player(Ui::KWS *ui){
     ui->horizontalSlider_2->setEnabled(false);
     ui->horizontalSlider_2->setValue(50);
     QPixmap voice(":/image/volume2.png");
-    QPixmap scaledPixmap = voice.scaled(QSize(35,35),Qt::KeepAspectRatio);
+    QPixmap scaledPixmap = voice.scaled(QSize(27,27),Qt::KeepAspectRatio);
     ui->label_6->setPixmap(scaledPixmap);
     QPixmap pixmap1(":/image/play1.png");
     icon.addPixmap(pixmap1);
@@ -65,19 +66,19 @@ void init_tableWidget(Ui::KWS *ui){
 }
 
 void init_qDialog(QDialog *qDialog){
-    qDialog->setStyleSheet("background-color: white");
-    qDialog->setFixedSize(250,100);
-    qDialog->setWindowTitle("提示");
-    QLabel *label = new QLabel(qDialog);
-    label->setText("正在检索，请稍候...");
-    label->setGeometry(QRect(30,20,180,20));
-    label->setFont(QFont("'Times New Roman', Times, serif"));
-    QLabel *label2 = new QLabel(qDialog);
-    QMovie* movie = new QMovie(":/image/dialog.gif");
-    movie->setScaledSize(QSize(188,25));
-    movie->start();
-    label2->setMovie(movie);
-    label2->setGeometry(QRect(30,50,188,20));
+//    qDialog->setStyleSheet("background-color: white");
+//    qDialog->setFixedSize(250,100);
+//    qDialog->setWindowTitle("提示");
+//    QLabel *label = new QLabel(qDialog);
+//    label->setText("正在检索，请稍候...");
+//    label->setGeometry(QRect(30,20,180,20));
+//    label->setFont(QFont("'Times New Roman', Times, serif"));
+//    QLabel *label2 = new QLabel(qDialog);
+//    QMovie* movie = new QMovie(":/image/dialog.gif");
+//    movie->setScaledSize(QSize(188,25));
+//    movie->start();
+//    label2->setMovie(movie);
+//    label2->setGeometry(QRect(30,50,188,20));
 }
 
 void init_lineEdit_show(Ui::KWS *ui){
@@ -85,4 +86,16 @@ void init_lineEdit_show(Ui::KWS *ui){
     ui->toolButton_next->setEnabled(false);
     ui->toolButton_goto->setEnabled(false);
     ui->lineEdit_page->setEnabled(false);
+}
+
+
+void init_tableView(Ui::KWS *ui){
+    ui->tableView->verticalHeader()->setVisible(false);
+    ui->tableView->horizontalHeader()->setVisible(false);
+    ui->tableView->setRowCount(1);
+    ui->tableView->setMouseTracking(true);
+    ui->tableView->setEditTriggers(QTableWidget::NoEditTriggers);
+    ui->tableView->setContextMenuPolicy(Qt::CustomContextMenu);
+    ui->tableView->setShowGrid(false);
+    ui->tableView->setStyleSheet("QScrollBar{height:5px;background-color:rgb(106,106,106)}");
 }

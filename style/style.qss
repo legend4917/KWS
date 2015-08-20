@@ -78,18 +78,6 @@ QSlider#horizontalSlider_2::sub-page:horizontal {
     background-color:rgb(51,102,255);
 }
 
-QPushButton#pushButton_3{
-    background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(181, 225, 250, 255), stop:0.5 rgba(222, 242, 251, 255));
-    border-radius:5px;
-    border: 1px solid #3C80B1;
-}
-
-QPushButton#pushButton_3:hover{
-    background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(134, 198, 233, 255), stop:0.5 rgba(206, 234, 248, 255));
-    border-radius:5px;
-    border: 1px solid #5F92B2;
-}
-
 QPushButton#pushButton_5{
     background-color: qconicalgradient(cx:0.5, cy:0.522909, angle:179.9, stop:0.494318 rgba(181, 225, 250, 255), stop:0.5 rgba(222, 242, 251, 255));
     border-radius:5px;
@@ -157,3 +145,9 @@ QToolButton#toolButton_prev, QToolButton#toolButton_next ,QToolButton#toolButton
 QLabel#label_currentpage, QLabel#label_totalpage{
     font-family: 'Times New Roman', Times, serif;
 }
+
+QTableWidget#tableView {
+    background-color: rgb(65,160,250);
+    border:none;
+}
+

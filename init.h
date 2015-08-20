@@ -2,6 +2,7 @@
 #define INIT
 #include "ui_kws.h"
 #include <QStyle>
+#include <QButtonGroup>
 
 void init(Ui::KWS *ui, QDialog *qDialog);
 void init_header(Ui::KWS *ui);
@@ -13,6 +14,7 @@ void init_pDialog(QDialog *pDialog);
 void init_qDialog(QDialog *qDialog);
 void init_tableout(Ui::KWS *ui, QLabel *tableout);
 void init_lineEdit_show(Ui::KWS *ui);
+void init_tableView(Ui::KWS *ui);
 
 #endif // INIT
 
